@@ -1,8 +1,8 @@
 import { registerApplication, start } from "single-spa";
 
 registerApplication({
-  name: "DIM-Connect Dashboard",
-  app: () => System.import("@dim-connect/dashboard"),
+  name: "@dim-connect/admin-portal",
+  app: () => System.import("@dim-connect/admin-portal"),
   activeWhen: ["/"],
 });
 

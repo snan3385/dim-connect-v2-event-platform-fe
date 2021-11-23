@@ -4,7 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>DIM Connect Root</title>
+  <title>DIM Connect</title>
+  <link rel="icon" type="image/x-icon" href="/favicon.ico?v=2" />
   <!--
     Remove this if you only support browsers that support async/await.
     This is needed by babel to share largeish helper code for compiling async/await in older
@@ -55,9 +56,11 @@
   <script type="systemjs-importmap">
     {
       "imports": {
+        "react": "https://cdn.jsdelivr.net/npm/react@16.13.1/umd/react.development.js",
+        "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.development.js",
         "@dim-connect/root-config": "//localhost:9000/dim-connect-root-config.js",
-        "@dim-connect/dashboard" : "//localhost:8081/dim-connect-dashboard.js",
-        "@dim-connect/user-onboarding" : "//localhost:8082/dim-connect-user-onboarding.js"
+        "@dim-connect/admin-portal" : "//localhost:8080/dim-connect-admin-portal.js",
+        "@dim-connect/user-onboarding" : "//localhost:8081/dim-connect-user-onboarding.js"
       }
     }
   </script>
@@ -83,13 +86,13 @@
     You need to enable JavaScript to run this app.
   </noscript>
   <main>
-    <!-- <div id="dim-connect-user-onboarding"></div>
-    <div id="dim-connect-dashboard"></div> -->
+    <div id="dim-connect-admin-portal"></div>
+    <div id="dim-connect-user-onboarding"></div>
     
   </main>
   <script>
     System.import('@dim-connect/root-config');
-    System.import('@dim-connect/dashboard');
+    System.import('@dim-connect/admin-portal');
     System.import('@dim-connect/user-onboarding');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
