@@ -60,7 +60,7 @@
         "react-dom": "https://cdn.jsdelivr.net/npm/react-dom@16.13.1/umd/react-dom.development.js",
         "@dim-connect/root-config": "//localhost:9000/dim-connect-root-config.js",
         "@dim-connect/admin-portal" : "//localhost:8080/dim-connect-admin-portal.js",
-        "@dim-connect/user-onboarding" : "//localhost:8081/dim-connect-user-onboarding.js"
+        "@dim-connect/apic-user-onboarding" : "//localhost:8081/dim-connect-apic-user-onboarding.js"
       }
     }
   </script>
@@ -87,13 +87,13 @@
   </noscript>
   <main>
     <div id="dim-connect-admin-portal"></div>
-    <div id="dim-connect-user-onboarding"></div>
+    <div id="dim-connect-apic-user-onboarding"></div>
     
   </main>
   <script>
     System.import('@dim-connect/root-config');
     System.import('@dim-connect/admin-portal');
-    System.import('@dim-connect/user-onboarding');
+    System.import('@dim-connect/apic-user-onboarding');
   </script>
   <import-map-overrides-full show-when-local-storage="devtools" dev-libs></import-map-overrides-full>
 </body>

@@ -7,9 +7,9 @@ registerApplication({
 });
 
 registerApplication({
-  name: "@dim-connect/user-onboarding",
-  app: () => System.import("@dim-connect/user-onboarding"),
-  activeWhen: ["/user-onboarding"],
+  name: "@dim-connect/apic-user-onboarding",
+  app: () => System.import("@dim-connect/apic-user-onboarding"),
+  activeWhen: ["/apic-user-onboarding"],
 });
 
 start({
