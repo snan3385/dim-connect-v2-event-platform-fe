@@ -12,6 +12,12 @@ registerApplication({
   activeWhen: ["/apic-user-onboarding"],
 });
 
+registerApplication({
+  name: "@team-app/team-app",
+  app: () => System.import("@team-app/team-app"),
+  activeWhen: ["/team-app"],
+});
+
 start({
   urlRerouteOnly: true,
 });
